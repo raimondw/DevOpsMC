@@ -48,7 +48,7 @@ code .\testfile.txt
 
 #Pay attention to the current .git folder content, especially the objects folder
 git add .
-#Notice we now have a new object in a 2 character folder name with 38 character name, i.e. 40 character hash
+#Notice we now have a new object in a 2 character folder name with 38 chgitaracter name, i.e. 40 character hash
 git status
 git diff --cached #Difference between staged and what is commited
 git commit -m "Initial testfile.txt commit"
@@ -66,6 +66,7 @@ git log
 #look at the type
 git cat-file -t <first 7 of the hash shown for the commit>
 #look at the content
+
 git cat-file -p <first 7 of the hash shown for the commit>
 
 #look at the type
@@ -97,11 +98,12 @@ function gitgraph {git log --oneline --graph --decorate --all}
 #Could add this to your profile
 code $profile
 
+
 #Note when you create a new repo you can override the default initial branch
 git init --initial-branch=main
 git init -b main
-
-
+#Note when you forgot to do this but remembered later on: using 'git branch -m oldbranch newbranch' you can rename the 'master' to 'main'
+git branch -m master main
 #WB06
 #Modify a file and stage
 code .\testfile.txt
