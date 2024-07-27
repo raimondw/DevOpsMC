@@ -1,5 +1,5 @@
-$scratch = 's:\scratch'
-$devopsmc = 'C:\Users\john\OneDrive\projects\GIT\DevOpsMC'
+$scratch = 'd:\scratch'
+$devopsmc = 'C:\Users\Raimond Wills\OneDrive\projects\GIT\DevOpsMC'
 
 #Check version
 git --version
@@ -13,24 +13,24 @@ git init --help #to also open man page
 Get-ChildItem -Force   #notice the .git
 
 #Clone the DevOps Master Class Repo into the current folder
-git clone https://github.com/johnthebrit/DevOpsMC.git .
+#git clone https://github.com/johnthebrit/DevOpsMC.git .
 #Clone into a new subfolder auto created under current path
-git clone https://github.com/johnthebrit/DevOpsMC.git
+#git clone https://github.com/johnthebrit/DevOpsMC.git
 
 #You can clone a local folder the same way!
-git clone gitplay1 gitplay2
-git remote -v    #would show repo1 as the origin as we cloned from it. More on this later
+#git clone gitplay1 gitplay2
+#git remote -v    #would show repo1 as the origin as we cloned from it. More on this later
 
 #Looking at remote (again more later on all of this!)
-git remote -v
-git remote show origin
+#git remote -v
+#git remote show origin
 
 #Set initial git configuration
 #Can replace --global with --local to set values for a specific repo if required
 git config --global --list    #care about username and email
 
-git config --global user.name "John Savill"
-git config --global user.email john@savilltech.com
+git config --global user.name "raimondw"
+git config --global user.email rwills779@gmail.com
 
 git config --list --show-origin      #see where coming from :q
 git config --list
